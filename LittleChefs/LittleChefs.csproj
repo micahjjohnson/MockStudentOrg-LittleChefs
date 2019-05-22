@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6D82E803-EA72-4A26-BEE5-F01CCEC18C13}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LittleChefs</RootNamespace>
+    <AssemblyName>LittleChefs</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account.cs" />
+    <Compile Include="Address.cs" />
+    <Compile Include="Person.cs" />
+    <Compile Include="Course.cs" />
+    <Compile Include="Appointment.cs" />
+    <Compile Include="AttendMark.cs" />
+    <Compile Include="Bill.cs" />
+    <Compile Include="Cal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cal.Designer.cs">
+      <DependentUpon>Cal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControllerClass.cs" />
+    <Compile Include="ControllerEmployee.cs" />
+    <Compile Include="AddressType.cs" />
+    <Compile Include="Form-EC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form-EC.Designer.cs">
+      <DependentUpon>Form-EC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form-Withdraw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form-Withdraw.Designer.cs">
+      <DependentUpon>Form-Withdraw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form11.Designer.cs">
+      <DependentUpon>Form11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form12.Designer.cs">
+      <DependentUpon>Form12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSection.Designer.cs">
+      <DependentUpon>FormSection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form14.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form14.Designer.cs">
+      <DependentUpon>Form14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form8.Designer.cs">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPayment.Designer.cs">
+      <DependentUpon>FormPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWeekView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWeekView.Designer.cs">
+      <DependentUpon>FormWeekView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Item.cs" />
+    <Compile Include="Payment.cs" />
+    <Compile Include="PermissionController.cs" />
+    <Compile Include="Permissions.cs" />
+    <Compile Include="ReferenceNo.cs" />
+    <Compile Include="ReferenceObject.cs" />
+    <Compile Include="Resources.cs" />
+    <Compile Include="Section.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="Form-Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form-Main.Designer.cs">
+      <DependentUpon>Form-Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStudent.Designer.cs">
+      <DependentUpon>FormStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormParent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormParent.Designer.cs">
+      <DependentUpon>FormParent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form-Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form-Login.Designer.cs">
+      <DependentUpon>Form-Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBilling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBilling.Designer.cs">
+      <DependentUpon>FormBilling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEnroll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEnroll.Designer.cs">
+      <DependentUpon>FormEnroll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LC.cs" />
+    <Compile Include="Login.cs" />
+    <Compile Include="Parent.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Search.cs" />
+    <Compile Include="Student.cs" />
+    <Compile Include="ControllerStudent.cs" />
+    <EmbeddedResource Include="Cal.resx">
+      <DependentUpon>Cal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form-Main.resx">
+      <DependentUpon>Form-Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStudent.resx">
+      <DependentUpon>FormStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormParent.resx">
+      <DependentUpon>FormParent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form-Login.resx">
+      <DependentUpon>Form-Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBilling.resx">
+      <DependentUpon>FormBilling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEnroll.resx">
+      <DependentUpon>FormEnroll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form-EC.resx">
+      <DependentUpon>Form-EC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form-Withdraw.resx">
+      <DependentUpon>Form-Withdraw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form11.resx">
+      <DependentUpon>Form11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSection.resx">
+      <DependentUpon>FormSection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form12.resx">
+      <DependentUpon>Form12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form14.resx">
+      <DependentUpon>Form14.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form8.resx">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPayment.resx">
+      <DependentUpon>FormPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWeekView.resx">
+      <DependentUpon>FormWeekView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

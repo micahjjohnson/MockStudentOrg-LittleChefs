@@ -1,0 +1,1 @@
+Micah, Johnson, 1996, 8, 25, 6146251786, test@gmail.com, 688 Riddle Road, Apt 1000B, Cincinnati, OH, 45220, C:\Users\johnsonmi\Documents\visual studio 2015\Projects\LittleChefs\data\Students\test.png, Parent, Test, 6145552222, mail, 505 PCMS, , Cincinnati, OH, 45200
